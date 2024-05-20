@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Chat app CSS illustration solution</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body class="flex justify-center min-h-screen relative font-Rubik ">
+
+<!-- top-left background -->
+<div class=" absolute bg-gradient-to-tr from-Light-Violet-0 to-Light-Magenta-0 top-0 left-0 w-half h-half rounded-br-full sm:w-96 sm:h-seventy sm:rounded-br-full sm:rounded-bl-full"></div>
+<!-- bottom-right -->
+<div class=" absolute bg-Light-Grayish-Violet-0 bottom-0 right-0 w-half h-half rounded-tl-full  sm:w-96 sm:h-seventy"></div>
+  <!-- container -->
+<div class="absolute w-64 mt-10  border-solid border-white border-8 rounded-3xl bg-Light-Grayish-Violet-0 shadow-2xl   sm:left-80 sm:top-24 sm:ml-2">
+  <div class="absolute w-36 h-5 bg-White-0 rounded-b-xl left-12 "></div>
+<!-- mobile-section -->
+    <div class=" flex bg-gradient-to-r from-Light-Violet-0 to-Light-Magenta-0 text-white rounded-t-2xl pt-5 rounded-b-md">
+      <h1 class="p-2"><</h1>
+      <img class="w-6 h-6 rounded-full border-solid border-white border-2 my-3" src="./images/avatar.jpg" alt="">
+      <h1 class=" text-sm  p-2 ">Samuel Green<span class="text-sm block text-PaleViolet-0">Available to Walk</span></h1>
+      <div class="ml-24">
+        <div class="w-1 h-1"><p>.</p></div>
+        <div class="w-1 h-1"><p>.</p></div>
+        <div class="w-1 h-1"><p>.</p></div>
+      </div>
+    </div>
+  <div class="bg-Light-Grayish-Violet-0 bg-opacity-5 w-full rounded-b-full ">
+    <!-- chat on the left -->
+    <div class="w-36 text-Moderate-Violet-0 text-sm ">
+      <p class="bg-Dark-Grayish-Violet-0 bg-opacity-15 m-2 p-2 rounded-t-xl rounded-r-xl"> That sounds great. I’d be happy with that.</p>
+      <p class="bg-Dark-Grayish-Violet-0 bg-opacity-15 m-2 p-2 rounded-t-xl rounded-r-xl">  Could you send over some pictures of your dog, please?</p>
+    </div>
+    <!-- chat on the right  -->
+    <div class="">
+        <div class="flex w-10 ml-22 ">
+        <img class="rounded-xl ml-2" src="./images/dog-image-1.jpg" alt="" >
+        <img class="rounded-xl ml-2" src="./images/dog-image-2.jpg" alt="" >
+        <img class="rounded-xl ml-2" src="./images/dog-image-3.jpg" alt="">
+        </div>
+        <div class= "text-Desaturated-Dark-Violet-0 text-sm text-right ml-16">
+        <p class="bg-White-0 mt-1 p-2 rounded-t-xl rounded-l-xl w-36 ml-6 text-left ">  Here are a few pictures. She’s a happy girl!</p>
+        <p class="bg-White-0 mt-1 p-2 rounded-t-xl rounded-l-xl w-20 ml-22">  Can you make it?</p>
+        </div>
+    </div>
+    <div class="">
+            <p class="bg-Dark-Grayish-Violet-0 text-Moderate-Violet-0 text-sm w-32 bg-opacity-15 ml-2 p-2 rounded-t-xl rounded-r-xl ">  She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+      
+            <div class="ml-2 mt-1  p-1 rounded-t-xl rounded-r-xl bg-gradient-to-r from-Light-Magenta-0 to-Light-Violet-0 w-44 text-white  ">
+              <input class="outline-Very-Light-Magenta-0 accent-Light-Magenta-0 opacity-25 ml-0" type="radio"  >
+              <span class="text-Light-Grayish-Violet-0 text-sm">30 minute walk</span>
+              <span class="ml-14 font-700">$29</span>
+            </div>
+            
+             <div class="ml-2 mt-1  p-1 rounded-t-xl rounded-r-xl bg-gradient-to-r from-Light-Magenta-0 to-Light-Violet-0 w-44 text-white ">
+              <input class="outline-Very-Light-Magenta-0 opacity-25 accent-Light-Magenta-0" type="radio" >
+              <span class="text-Light-Grayish-Violet-0 text-sm">1 hour walk</span>
+              <span class="ml-16 pl-2 font-700">$49</span>
+            </div>
+
+    </div>
+    <input class=" relative w-56 ml-2 p-3 my-2 rounded-full text-sm" type="text" placeholder="Type a message…" ><button class="bg-Very-Dark-Desaturated-Violet-0 w-6 text-White-0 rounded-full absolute right-3.5 bottom-4">></button>
+  </div> 
+</div>
+<div class=" absolute bottom-2 sm:top-80 sm:right-80 sm:w-105  ">
+      <h1 class="text-center text-3xl font-500 mb-3 sm:text-left text-Very-Dark-Desaturated-Violet-0 sm:text-4xl ">Simple booking</h1>
+      <p class="text-sk text-Dark-Grayish-Violet-0 text-center sm:text-left px-16 sm:text-lg sm:px-0">  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+    discuss arrangements and make bookings. Once the walk has been completed you can rate 
+    your walker and book again all through the chat.</p>
+    </div>
+
+</body>
+</html>
